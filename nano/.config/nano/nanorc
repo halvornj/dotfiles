@@ -1,0 +1,6 @@
+set linenumbers
+# set mouse
+set tabsize 4
+# set breaklonglines
+
+include /usr/share/nano/markdown.nanorc
