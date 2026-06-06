@@ -16,10 +16,10 @@ window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
   padding: 4px;
-  border-top: 1px solid @rosewater;
+  /* border-top: 1px solid @rosewater; */
   border-bottom: 3px solid @sapphire;
-  background: alpha(@crust, 0.4);
-  border-radius: 10px;
+  background: alpha(#000000, 0.4);
+ /*  border-radius: 10px;*/
 }
 
 window#waybar.hidden {
