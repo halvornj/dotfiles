@@ -7,7 +7,10 @@
 (package-initialize)
 (unless package-archive-contents
  (package-refresh-contents))
-(load-theme 'catppuccin :no-confirm)
+
+(use-package jetbrains-darcula-theme
+  :config
+  (load-theme 'jetbrains-darcula t))
 
 (require 'dashboard)
 (dashboard-setup-startup-hook)
@@ -69,7 +72,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages nil))
+ '(package-selected-packages
+   '(catppuccin-theme dashboard dired-auto-readme dired-git-info
+		      doom-modeline jetbrains-darcula-theme magit
+		      nerd-icons-dired simple-httpd vterm)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
