@@ -1,3 +1,4 @@
+require("environment_variables")
 require("input")
 require("keybindings")
 require("look_feel")
