@@ -8,6 +8,8 @@ hl.bind(mainMod .. "+ CONTROL + Return", hl.dsp.exec_cmd(programs.terminal))
 hl.bind(mainMod .. "+ Return", hl.dsp.exec_cmd(programs.menu))
 hl.bind(mainMod .. "+ B", hl.dsp.exec_cmd(programs.browser))
 hl.bind(mainMod .. "+ CONTROL + ALT + SHIFT + L", hl.dsp.exec_cmd("firefox linkedin.com/feed/?trk/Officekey"))
+hl.bind(mainMod .. "+ e", hl.dsp.exec_cmd("emacs"))
+
 
 -- WINDOW management
 hl.bind(mainMod .. "+ F", hl.dsp.window.fullscreen({ action = "toggle" }))

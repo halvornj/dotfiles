@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/halvornj/.config/emacs/elpa/vterm-20260730.1414/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

@@ -65,20 +65,41 @@
 ;; org mode
 ;; (setq org-startup-folded t)
 
-(use-package vterm
-  :ensure t)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+
  '(package-selected-packages
-   '(catppuccin-theme dashboard dired-auto-readme dired-git-info
-		      doom-modeline jetbrains-darcula-theme magit
-		      nerd-icons-dired simple-httpd vterm)))
+   '(auctex dashboard dired-auto-readme dired-git-info doom-modeline
+	    jetbrains-darcula-theme magit nerd-icons-dired
+	    simple-httpd))
+
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+;; LaTeX
+(require 'pdf-tools)
+(require 'auctex)
+(setq +latex-viewers '(pdf-tools))
+
+
+
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(auctex dashboard dired-auto-readme dired-git-info doom-modeline
+	    jetbrains-darcula-theme magit nerd-icons-dired pdf-tools
+	    simple-httpd))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(TeX-view-program-selection
+   '(((output-dvi has-no-display-manager) "dvi2tty")
+     ((output-dvi style-pstricks) "dvips and gv") (output-dvi "xdvi")
+     (output-pdf "PDF Tools") (output-html "xdg-open"))))
